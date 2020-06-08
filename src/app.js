@@ -112,15 +112,6 @@ app.get('/products', (req, res) => {
 app.get('*', (req, res) => {
     res.sendStatus(500)
 })
-// app.get('*', (req, res) => {
-//     res.render('404', {
-//         title: '404',
-//         name: 'Adeola Onads',
-//         errorMessage: 'Page not found',
-        
-//     })
-// })
-
 
 
 app.get('/help/*', (req, res) => {
@@ -131,40 +122,11 @@ app.get('*', (req, res) => {
     res.send('My 404 Page')
 })
 
-// console.log(__dirname)
-// console.log(__filename)
-
-// console.log(path.join(__dirname, '../public'))
-
-// app.get('', (req, res) => {
-//     res.send('<h1>Hello Express!</h1>')
-// })
-
-// app.get('/help', (req, res) => {
-//     res.send([
-//         {
-//             name: 'Adeola',
-//             age: 27
-//         },
-//         {
-//             name: 'Opeyemi',
-//             age: 28
-//         }
-//     ])
-// })
-
-// app.get('/about', (req, res) => {
-//     res.send('<h1>This is the About page</h1>')
-// })
-
-
 
 
 app.listen(port, () => {
     console.log('Server is up on port ' + port);
 })
 
-//app.com
-//app.com/help
-//app.com/about
+
 
